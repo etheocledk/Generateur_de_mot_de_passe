@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="wrapper__container">
+            <h1>Password Generator</h1>
+            <div class="wrapper__container__top">
+                <div class="input">
+                    <input type="text" disabled placeholder="P4$5W0rD!">
+                </div>
+                <span class="mdi mdi-content-copy"></span>
+            </div>
+            <div class="password__information">
+                <div class="password__information__top">
+                    <div class="Character__div__top">
+                        <p>Character Length</p>
+                        <p>0</p>
+                    </div>
+                    <input id="range" type="range" min="5" max="20" value="0" step="1">
+                </div>
+                <div class="password__information__bottom">
+                    <div>
+                        <input type="checkbox" class="custom-checkbox checkbox1" >
+                        <label>Include Uppercase Letters</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="custom-checkbox checkbox2">
+                        <label>Include Lowercase Letters</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="custom-checkbox checkbox3">
+                        <label>Include Numbers</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="custom-checkbox checkbox4">
+                        <label>Include Symbols</label>
+                    </div>
+                </div>
+                <div class="stength__parent">
+                    <p>STRENGTH</p>
+
+                    <div class="stength__parent__medium">
+                        <p></p>
+                        <div class="rectangle__parent">
+                            <div class="rectangle l1"></div>
+                            <div class="rectangle l2"></div>
+                            <div class="rectangle l3"></div>
+                            <div class="rectangle l4"></div>
+                        </div>
+                    </div>
+                </div>
+                <p class="error"></p>
+                <div class="generate-btn">
+                    <button>GENERATE &RightArrow;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
